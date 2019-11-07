@@ -1,0 +1,112 @@
+No.     Time           Source                Destination           Protocol Length Info
+     48 6.032337       192.168.116.161       128.119.245.12        HTTP     662    GET /wireshark-labs/HTTP-wireshark-file4.html HTTP/1.1 
+
+Frame 48: 662 bytes on wire (5296 bits), 662 bytes captured (5296 bits) on interface 0
+Ethernet II, Src: Azurewav_1c:0b:83 (dc:f5:05:1c:0b:83), Dst: AsustekC_67:19:61 (00:18:f3:67:19:61)
+    Destination: AsustekC_67:19:61 (00:18:f3:67:19:61)
+    Source: Azurewav_1c:0b:83 (dc:f5:05:1c:0b:83)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.116.161, Dst: 128.119.245.12
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 648
+    Identification: 0xf048 (61512)
+    Flags: 0x4000, Don't fragment
+    ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 128
+    Protocol: TCP (6)
+    Header checksum: 0x5d59 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 192.168.116.161
+    Destination: 128.119.245.12
+Transmission Control Protocol, Src Port: 56839, Dst Port: 80, Seq: 1, Ack: 1, Len: 608
+    Source Port: 56839
+    Destination Port: 80
+    [Stream index: 3]
+    [TCP Segment Len: 608]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 609    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 256
+    [Calculated window size: 65536]
+    [Window size scaling factor: 256]
+    Checksum: 0xbbda [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (608 bytes)
+Hypertext Transfer Protocol
+    GET /wireshark-labs/HTTP-wireshark-file4.html HTTP/1.1\r\n
+    Host: gaia.cs.umass.edu\r\n
+    Connection: keep-alive\r\n
+    Cache-Control: max-age=0\r\n
+    DNT: 1\r\n
+    Upgrade-Insecure-Requests: 1\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36\r\n
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6\r\n
+    If-None-Match: "2ca-596bc33423538"\r\n
+    If-Modified-Since: Thu, 07 Nov 2019 06:59:01 GMT\r\n
+    \r\n
+    [Full request URI: http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html]
+    [HTTP request 1/1]
+    [Response in frame: 50]
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 6.158945       128.119.245.12        192.168.116.161       HTTP     294    HTTP/1.1 304 Not Modified 
+
+Frame 50: 294 bytes on wire (2352 bits), 294 bytes captured (2352 bits) on interface 0
+Ethernet II, Src: AsustekC_67:19:61 (00:18:f3:67:19:61), Dst: Azurewav_1c:0b:83 (dc:f5:05:1c:0b:83)
+    Destination: Azurewav_1c:0b:83 (dc:f5:05:1c:0b:83)
+    Source: AsustekC_67:19:61 (00:18:f3:67:19:61)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 128.119.245.12, Dst: 192.168.116.161
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+    Total Length: 280
+    Identification: 0x84f2 (34034)
+    Flags: 0x4000, Don't fragment
+    ...0 0000 0000 0000 = Fragment offset: 0
+    Time to live: 48
+    Protocol: TCP (6)
+    Header checksum: 0x1a20 [validation disabled]
+    [Header checksum status: Unverified]
+    Source: 128.119.245.12
+    Destination: 192.168.116.161
+Transmission Control Protocol, Src Port: 80, Dst Port: 56839, Seq: 1, Ack: 609, Len: 240
+    Source Port: 80
+    Destination Port: 56839
+    [Stream index: 3]
+    [TCP Segment Len: 240]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 241    (relative sequence number)]
+    Acknowledgment number: 609    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 238
+    [Calculated window size: 30464]
+    [Window size scaling factor: 128]
+    Checksum: 0x3f8c [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (240 bytes)
+Hypertext Transfer Protocol
+    HTTP/1.1 304 Not Modified\r\n
+    Date: Thu, 07 Nov 2019 18:48:09 GMT\r\n
+    Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3\r\n
+    Connection: Keep-Alive\r\n
+    Keep-Alive: timeout=5, max=100\r\n
+    ETag: "2ca-596bc33423538"\r\n
+    \r\n
+    [HTTP response 1/1]
+    [Time since request: 0.126608000 seconds]
+    [Request in frame: 48]
+    [Request URI: http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html]
