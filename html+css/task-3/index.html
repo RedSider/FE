@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/timeline.css"> -->
+    <link rel="stylesheet" href="styles/timeline1.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside id="aside_left">
+            <section id="avaWrapper">
+                <picture id="myAva">
+                    <source srcset="img\catAvaNY.jpg" type="image/jpg" media="(min-width: 600px)">
+                        
+                    <img src="img\catAvaNY.jpg" alt="My avatar" id="myAva_jpg">
+                </picture>
+            </section>
+
+            <h2>Andrey Redsider</h2>
+            
+            <progress>
+
+            </progress>
+
+        </aside>
+
+        <div id="main_info">
+
+            <!-- #template ------------------------------------------------------------------------------------------------------------------   -->
+            <template id="productrow">
+                <tr>
+                    <td class="record"></td>
+                    <td></td>
+                </tr>
+
+                <div contextmenu = "testmenu"> <!-- определяем, для блока контекстное меню --> 
+                    Кликни по мне правой кнопкой мыши.
+                    <menu type = "context" id = "testmenu"> <!-- создаем контекстное меню --> 
+                        <menuitem label = "like"></menuitem> <!-- определяем первый элемент меню --> 
+                        <menuitem label = "dislike"></menuitem> <!-- определяем второй элемент меню --> 
+                    </menu>
+                </div>
+            </template>
+            <!-- #template ------------------------------------------------------------------------------------------------------------------  -->
+
+            <!-- <section>
+                <video width="400" height="300" controls>
+                    <source src="https://youtu.be/waAlgFq9Xq8" type='video/; codecs=""'>>
+                        
+                    <track src="" srclang="en" label="English">
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/waAlgFq9Xq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </video>
+
+                <time>Video duration <bdi>لا تثق بأحد</bdi> 4:17</time>
+            </section> -->
+            
+            <!-- <div id="timeline">
+                <div class="timeline_tittle" id="timeline_tittle">  
+                    <div class="timeline_tittleName"> Education </div>
+                    <div class="timeline_tittleName"> Work </div>
+                </div>
+
+                <section class="timeline_section timeline_sectionEdu">
+                    <p class="section_name"> University </p>
+                    <p class="timeline_data"> timeline_data </p>
+                    <p class="section_description"> section_description 
+                        and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more
+                    </p>
+                </section>
+
+                <section class="timeline_section timeline_sectionWork">
+                    <p class="section_name"> Front-end EPAM courses </p>
+                    <p class="timeline_data"> timeline_data </p>
+                    <p class="section_description"> section_description 
+                        and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more
+                    </p>
+                </section>
+
+                <section class="timeline_section timeline_sectionWork">
+                        <p class="section_name"> Front-end Prog.kiev.ua courses </p>
+                        <p class="timeline_data"> timeline_data </p>
+                        <p class="section_description"> section_description 
+                            and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more
+                        </p>
+                    </section>
+
+                <section class="timeline_section timeline_sectionWork">
+                    <p class="section_name"> Apple sales manager </p>
+                    <p class="timeline_data"> timeline_data </p>
+                    <p class="section_description"> section_description 
+                        and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more
+                    </p>
+                </section>
+
+                <section class="timeline_section timeline_sectionWork">
+                    <p class="section_name"> Call center operator </p>
+                    <p class="timeline_data"> timeline_data </p>
+                    <p class="section_description"> section_description 
+                        and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more
+                    </p>
+                </section>
+
+                <section class="timeline_section timeline_sectionEdu">
+                    <p class="section_name"> College </p>
+                    <p class="timeline_data"> timeline_data </p>
+                    <p class="section_description"> section_description 
+                        and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more
+                    </p>
+                </section>
+            </div>             -->
+
+        <!-- The Timeline -->
+
+        <ul class="timeline">
+            <div class="timeline_tittle" id="timeline_tittle">  
+                <div class="timeline_tittleName"> Education </div>
+                <div class="timeline_tittleName"> Other activities </div>
+            </div>
+
+            <!-- Item 1 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Epam courses</span>
+                        <span class="time-wrapper"><time class="time">2019.11 m. - present</time></span>
+                    </div>
+                    <div class="desc">My current main education. <wbr> Way better than the courses before!</div>
+                </div>
+            </li>
+        
+            <!-- Item 2 -->
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">NASAA University</span>
+                        <span class="time-wrapper"><time class="time">2019 - 2021</time></span>
+                    </div>
+                    <div class="desc"> Masters degree in ...</div>
+                </div>
+            </li>
+
+            <!-- Item 3 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Prog.kiev.ua cours</span>
+                        <span class="time-wrapper"><time class="time"> 07 - 10 m. (2019)</time></span>
+                    </div>
+                    <div class="desc">Front-end Prog.kiev.ua courses</div>
+                </div>
+            </li>
+        
+            <!-- Item 4 -->
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">NASAA University</span>
+                        <span class="time-wrapper"><time class="time">2017 - 2019</time></span>
+                    </div>
+                    <div class="desc"> Bachelors degree</div>
+                </div>
+            </li>
+
+            <!-- Item 5 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Sales Manager</span>
+                        <span class="time-wrapper"><time class="time">07 - 10 m. (2019)</time></span>
+                    </div>
+                    <div class="desc">Apple devices Sales Manager in MCStore</div>
+                </div>
+            </li>
+            
+            <!-- Item 6 -->
+            <li>
+                <div class="direction-l">
+                    <div class="flag-wrapper">
+                        <span class="flag">College T. Shevchenka</span>
+                        <span class="time-wrapper"><time class="time">2013 - 2017</time></span>
+                    </div>
+                    <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                </div>
+            </li>
+
+            <!-- Item 7 -->
+            <li>
+                <div class="direction-r">
+                    <div class="flag-wrapper">
+                        <span class="flag">Call center</span>
+                        <span class="time-wrapper"><time class="time"> 09 - 11 (2017)</time></span>
+                    </div>
+                    <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                </div>
+            </li>
+
+            
+        </ul>
+
+        <div class="mediaWrapper">
+            <div id="videoWrapper">
+                <video width="360" height="180" controls>
+                    <source src="https://youtu.be/waAlgFq9Xq8" type='video/; codecs=""'>>
+                        
+                    <track src="" srclang="en" label="English">
+                </video>
+            </div>
+
+            <div id="audioWrapper">
+                <audio controls>
+                    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+                    <source src="audio/music.mp3" type="audio/mpeg">
+                    Тег audio не поддерживается вашим браузером. 
+                    <a href="audio/music.mp3">Скачайте музыку</a>.
+                </audio>
+            </div>
+                
+            
+        </div>
+        
+    </main>
+
+    
+
+    
+
+    <footer>
+            
+    </footer>
+</body>
+</html>
+
+<!-- 
+    <wbr> допустимый разрыв строки +
+    <summary>
+    <article>
+    <audio> +
+    <bdi>
+    <canvas> js
+    <datalit>
+    <details>
+    <dialog> js
+    <embed>
+    <figcaption>
+    <figure>
+    <mark>
+    <menuitem> пункты при нажатии правой кнопкой мыши (контекстное меню) (рабоает ток в мозилле!!!)
+    <meter>
+    <output>
+    <picture> +
+    <progress> +
+-->

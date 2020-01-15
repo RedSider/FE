@@ -1,0 +1,32 @@
+#timeline{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+#timeline:first-child(){
+    padding-top: 2rem;
+}
+.timeline_section,
+.timeline_tittle > *{
+    width: 49.95%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.timeline_sectionEdu > *,
+.timeline_sectionWork > *{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.timeline_sectionEdu{
+    border-right: 1px solid black;
+}
+.timeline_sectionWork{
+    align-self: flex-end;
+    border-left: 1px solid black;
+}
+.timeline_tittle{
+    display: flex;
+}
+.timeline_tittleName{
+    text-align: center;
+}
