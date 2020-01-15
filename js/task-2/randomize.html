@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+
+
+    <script>
+
+            let min = 1, max = 100;
+
+            function RandomF (min, max) {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+            };
+
+            let x = RandomF(min, max), y, i = 1;
+            console.log(x);
+
+            alert ("Угадай число!");
+            while (x !== y) {
+                y = +prompt ( "Ваше число? Диапазон: от " + min + " до " + max);
+
+                if (x == y) {
+                    alert ("Congrats! U did it with " + i + " attempts");
+                }
+                else if ( Number.isNaN(y) == true ){
+                    alert ("Нужно ввести число! Диапазон: от " + min + " до " + max);
+                }
+                else if ( y == 0 ){
+                    y = x;
+                    alert ("By!");
+                }
+                else if (y > max || y < min ) {
+                    alert ("Нужно отгадать число в диапазоне! Диапазон: от " + min + " до " + max);
+                }
+                else if (x > y) {
+                    alert ("Больше! Диапазон: от " + y + " до " + max);
+                    min = y;
+                }
+                else if (x < y) {
+                    alert ("Меньше! Диапазон: от " + min + " до " + y);
+                    max = y;
+                }
+                else {
+                    alert ("ERROR!");
+                }
+                i++;
+            }
+
+    </script>
+
+</html>
