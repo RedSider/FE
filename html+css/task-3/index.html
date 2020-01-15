@@ -14,7 +14,8 @@
     <header>
         <nav>
             <ul>
-
+                <li> <a href="#timeline"> timeline </a> </li>
+                <li> <a href="#media"> media </a> </li>
             </ul>
         </nav>
     </header>
@@ -29,7 +30,7 @@
                 </picture>
             </section>
 
-            <h2>Andrey Redsider</h2>
+            <article> <h2>Andrey Redsider</h2> </article>
             
             <progress>
 
@@ -125,9 +126,10 @@
         <!-- The Timeline -->
 
         <ul class="timeline">
+            <a href="" name="timeline"></a>
             <div class="timeline_tittle" id="timeline_tittle">  
-                <div class="timeline_tittleName"> Education </div>
-                <div class="timeline_tittleName"> Other activities </div>
+                <div class="timeline_tittleName"> <mark>Education</mark> </div>
+                <div class="timeline_tittleName"> <mark>Other activities</mark> </div>
             </div>
 
             <!-- Item 1 -->
@@ -137,7 +139,7 @@
                         <span class="flag">Epam courses</span>
                         <span class="time-wrapper"><time class="time">2019.11 m. - present</time></span>
                     </div>
-                    <div class="desc">My current main education. <wbr> Way better than the courses before!</div>
+                    <div class="desc">My current main education. <details> <summary> Way better than... </summary> <p>the courses before!</p> </details> </div>
                 </div>
             </li>
         
@@ -192,7 +194,7 @@
                         <span class="flag">College T. Shevchenka</span>
                         <span class="time-wrapper"><time class="time">2013 - 2017</time></span>
                     </div>
-                    <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                    <div class="desc">A description of all the lectures and courses <wbr> I have taken and my final degree?</div>
                 </div>
             </li>
 
@@ -211,6 +213,7 @@
         </ul>
 
         <div class="mediaWrapper">
+            <a href="" name="media"></a>
             <div id="videoWrapper">
                 <video width="360" height="180" controls>
                     <source src="https://youtu.be/waAlgFq9Xq8" type='video/; codecs=""'>>
@@ -228,6 +231,20 @@
                 </audio>
             </div>
                 
+            <button id="openDialog">Press me</button>
+            <dialog>
+                <p>Thank you</p>
+                <p><button id="closeDialog">Bye</button></p>
+            </dialog>
+            <script>
+                var dialog = document.querySelector('dialog');
+                document.querySelector('#openDialog').onclick = function() {
+                dialog.show(); // Показываем диалоговое окно
+                }
+                document.querySelector('#closeDialog').onclick = function() {
+                dialog.close(); // Прячем диалоговое окно
+                }
+            </script>
             
         </div>
         
@@ -245,18 +262,18 @@
 
 <!-- 
     <wbr> допустимый разрыв строки +
-    <summary>
-    <article>
+    <summary> +
+    <article> +
     <audio> +
     <bdi>
     <canvas> js
     <datalit>
-    <details>
-    <dialog> js
+    <details> +
+    <dialog> js +
     <embed>
     <figcaption>
     <figure>
-    <mark>
+    <mark> +
     <menuitem> пункты при нажатии правой кнопкой мыши (контекстное меню) (рабоает ток в мозилле!!!)
     <meter>
     <output>
